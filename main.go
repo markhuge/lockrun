@@ -15,7 +15,6 @@ func main() {
 
 	// read pid from file if exists
 	pid, files := resolveFiles(opts)
-	fmt.Printf("PID: %d", pid)
 
 	// if pid/lock exists, check to see if process is still running
 	if pid != 0 && isRunning(pid) {
